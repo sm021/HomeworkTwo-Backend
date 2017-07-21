@@ -1,19 +1,19 @@
 
 //Problem 1 - Prints Fizz when number is divisible by 3 and it prints FizzBuzz when the number is divisible by 5.
 
-let array =[];
+let divByFive = '';
+let divByThree = '';
+let number = 0;
 
-for ( var i =1; i <=100; i++) {
-  array.push(i)
-
-    for ( j in array) {
-      if (Number.isInteger((array[j])/3) === true)  {
-        console.log('Fizz');
-      } else if (Number.isInteger((array[j])/5) === true)  {
-        console.log('FizzBuzz')
-      }
-        else {
-        console.log(array[j])
-      }
+for ( let i = 1 ; i <= 100; i++)  {
+    if ( Number.isInteger( i / 3) === true) {
+      divByThree = 'Fizz'
+      console.log(divByThree);
+    } else if ( Number.isInteger( i / 5) === true)  {
+      divByFive = 'FizzBuzz'
+      console.log(divByFive);
+    } else {
+      number = i;
+      console.log(number);
     }
 }

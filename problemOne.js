@@ -1,4 +1,5 @@
 
+//Problem 1 - Prints Fizz when number is divisible by 3 and it prints FizzBuzz when the number is divisible by 5.
 
 let array =[];
 
